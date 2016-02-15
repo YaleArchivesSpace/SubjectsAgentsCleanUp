@@ -1,5 +1,7 @@
 Reports
 =======
+Information from ArchivesSpace to assist in Yale cleanup efforts.  
+Some queries require crosstab reports -- Excel will probably be the best tool for these.
 
 Agent Queries
 --------------
@@ -13,7 +15,7 @@ Agent Queries
 * How many records have at least one Name Form with a URI in Authority ID?
 * Which records have a name form with a URI in Authority ID?
 * How many name forms have associated dates of name use? If > 0 , which ones?
-* How many name forms have data in fields other than primary part of name? If > 0 , which ones?
+* How many name forms have data in name fields other than primary part of name? If > 0 , which ones?
 * Which agents are only linked to records from a single repository? Run this for each repository.
 * Which agents are only linked to BRBL accessions?
 * How many records have associated dates of existence?
@@ -24,6 +26,45 @@ Agent Queries
 * How many records have associated External Documents? If > 0 , which ones?
 * How many records have associated Rights Statements? If > 0 , which ones?
 
+Master Field List for Agents
+----------------------------
+* URL,
+* person,
+* sort name,
+* primary name,
+* name title,
+* name prefix,
+* rest of name,
+* name suffix,
+* name number,
+* name dates,
+* name qualifier,
+* date expression,
+* date begin,
+* date end,
+* salutation,
+* contact name,
+* address 1,
+* address 2,
+* address 3,
+* city,
+* region,
+* country,
+* post code,
+* email,
+* email signature,
+* note,
+* authority id,
+* source,
+* rules,
+* note,
+* externalDocTitle,
+* externalDocLocation,
+* agent id,
+* publish,
+* related,
+* relatedTo,
+* rightsStatement
 
 Subject Queries
 ----------------
