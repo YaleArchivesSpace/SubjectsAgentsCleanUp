@@ -80,3 +80,4 @@ Subject Queries
 * Which subjects are a string match for each subvision (normalizing for the presence or absence of a trailing period)?
 * Among string matches, which share the same source value?
 * Which subjects are only linked to records from a single repository. Run this for each repository.
+* Which subject types in ArchivesSpace are not found in our data?
