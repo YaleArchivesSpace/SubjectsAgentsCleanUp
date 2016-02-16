@@ -25,6 +25,8 @@ Agent Queries
 * How many records have associated Related Agents? If > 0 , which ones?
 * How many records have associated External Documents? If > 0 , which ones?
 * How many records have associated Rights Statements? If > 0 , which ones?
+* Which agents are not associated with any records?
+* Which agent strings are similar to each other? What are their sources, rules, and IDs?
 
 Master Field List for Agents
 ----------------------------
@@ -72,12 +74,12 @@ Subject Queries
 * Among subjects of each type, what sources are recorded?
 * How many records have a URI in Authority ID? If more than zero, which records?
 * What subject types have no records?
-* How many subjects have subdivisions?
+* How many subjects have subdivisions? (this may lead to further questions)
 * Which subjects have subdivisions?
 * Which subjects have no subdivisions?
+* What are the subdivisions on subjects?
 * Do any subjects have associated external documents?
 * How many subjects are not linked to any records? If so, which ones?
 * Which subjects are a string match for each subvision (normalizing for the presence or absence of a trailing period)?
 * Among string matches, which share the same source value?
 * Which subjects are only linked to records from a single repository. Run this for each repository.
-* Which subject types in ArchivesSpace are not found in our data?
