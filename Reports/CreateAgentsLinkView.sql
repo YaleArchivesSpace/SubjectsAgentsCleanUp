@@ -1,15 +1,23 @@
 use Prod20160215;
 start transaction;
-create temporary table agents_view
-SELECT 
-    NULL accession_id,
+drop  table if exists agents_view;
+CREATE  TABLE agents_view (
+    id MEDIUMINT PRIMARY KEY AUTO_INCREMENT,
+    accession_id MEDIUMINT,
+    resource_id MEDIUMINT,
+    archival_object_id MEDIUMINT,
+    repo_id MEDIUMINT,
+    agent_person_id MEDIUMINT,
+    agent_corporate_body_id MEDIUMINT,
+    agent_family_id MEDIUMINT,
+    INDEX (accession_id , resource_id , archival_object_id , repo_id , agent_person_id , agent_corporate_body_id , agent_family_id)
+) SELECT NULL accession_id,
     NULL resource_id,
     ao.id archival_object_id,
     ao.repo_id repo_id,
     ap.id agent_person_id,
     NULL agent_corporate_body_id,
-    NULL agent_family_id
-FROM
+    NULL agent_family_id FROM
     archival_object ao
         LEFT JOIN
     linked_agents_rlshp lar ON lar.archival_object_id = ao.id
